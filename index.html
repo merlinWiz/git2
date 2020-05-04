@@ -1,11 +1,745 @@
+
 <!DOCTYPE html>
-<html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="ru" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="ru" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltr" lang="ru">
+<!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<title>Git Hub repo cloning. </title>
-	<meta name="description" content="Github repo cloning">
-</head>
-<body>	
-	<h1>Repo cloning</h1>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="csrf-param" content="_csrf-frontend">
+<meta name="csrf-token" content="gJOF2q4ao8WU9e-pVw8oEpjwsiWpNSBVIEMFw-hVB0jux_eAxSzv98WkvMYGWxxk8LTmF-RdUyxYLzKWgDpmEg==">
+    <title>Антикариат | Аукционный дом &quot;Гелос&quot;</title>
+    <meta name="description" content="Аукционный дом. Продажа , оценка, антикваиата, торги онлайн.">
+<meta name="keywords" content="Аукцион, продажа , оценка, антикваиат, торги онлайн.">
+<link href="/assets/1e742e0f/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/1c340703/css/boot_cleaned_online.css" rel="stylesheet">
+<!--[if lte IE 9]>
+<link href="/css/IEstyle.css" rel="stylesheet">
+<![endif]-->
+<link href="/css/basic1.css" rel="stylesheet">
+<link href="/css/newsfeed.css" rel="stylesheet">
+<link href="/css/menu.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/containers.css" rel="stylesheet">
+<link href="/css/fotorama.css" rel="stylesheet">
+<link href="/css/component.css" rel="stylesheet">
+<link href="/css/stylesheet.css" rel="stylesheet">
+<link href="/css/modified-stylesheet.css" rel="stylesheet">
+<link href="/css/adaptive.css" rel="stylesheet">
+<link href="/css/bootstrap-social-cleaned-min.css" rel="stylesheet"></head>
+<body class="common-home">
+<div class="wrap">
+<div class="container header_top" id="header_top">
+    <div class="row">
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4 ">
+                <a href="/" aria-label="logo"><img class="logo" src="/img/logo2_m.gif" alt="Логтип Гелос"></a>
+                <a href="/" aria-label="logo2"><img class="logo2" src="/img/logo2_m2.gif" alt="Логтип Гелос"></a>
+            </div>
+
+        <div class="col-md-4">
+
+        </div>
+    </div>
+</div>
+    <input type="checkbox" id="toggle" class="toggle">
+    <label for="toggle" class="menu_plane">
+        <img src="/img/menu.png" alt="Меню Гелос" />
+    </label>
+    
+<div class="search_top" >
+    <div >
+                <div  class="sb-search " >
+                    <div  class="glyphicon glyphicon-phone-alt sb-icon-contacts show-contacts" ></div>
+                </div>
+                <div  class="sb-search ">
+                    <div class="fa fa-search sb-icon-contacts show-search"></div>
+                </div>
+                <div class="sb-search" >
+                    <div class="fa fa-user sb-icon-contacts show-auth">
+                    </div>
+                </div>
+<!--                <div class="sb-search">-->
+<!--                    <div  class="dropdown">-->
+<!--                        <div class="glyphicon glyphicon-user  dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ></div>-->
+<!--                        <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">-->
+
+<!--                            <li><a href="/login">Login</a></li>-->
+<!--                            <li><a href="/cabinet">Cabinet</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+
+<div class="menu_wraper">
+    <div id="menu1" class="menu1">
+        <div class="container">
+
+    <ul class="menu-top"><li class="menu-left first"><input type="checkbox" id="o-nas_frontend\widgets\GelosMenuWidget" class="accordion_toggle"><a class="menu-button menu-drop" href="/o-nas"><div class="border_label"><span class="menu-label">О Нас</span></div></a><label class="accordion_trigger chevron" for="o-nas_frontend\widgets\GelosMenuWidget"><span class="span-chevron down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span class="span-chevron up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></label><div class="menu-dropdown menu-dropdown2"><ul class="menu-sub"><li class="menu-left first last"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/o-nas/kontakty"><div class="accordion_trigger"><span class="menu-label">Контакты</span></div></a></div></div></li></ul></div></li>
+<li class="menu-left"><input type="checkbox" id="catalog_frontend\widgets\GelosMenuWidget" class="accordion_toggle"><a class="menu-button menu-drop" href="/catalog"><div class="border_label"><span class="menu-label">Салон</span></div></a><label class="accordion_trigger chevron" for="catalog_frontend\widgets\GelosMenuWidget"><span class="span-chevron down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span class="span-chevron up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></label><div class="menu-dropdown menu-dropdown2"><ul class="menu-sub"><li class="menu-left first"><input type="checkbox" id="numizmatica_frontend\widgets\GelosMenuWidget" class="accordion_toggle"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/catalog/numizmatica"><div class="accordion_trigger"><span class="menu-label">Нумизматика</span></div></a></div><div class="menu-item-plane-label chevron"><label class="accordion_trigger chevron" for="numizmatica_frontend\widgets\GelosMenuWidget"><span class="span-chevron down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span class="span-chevron up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></label></div></div><div class="accordion_target"><ul class="accordion" style="background-color: #d2b89a"><li class="menu-left first last"><input type="checkbox" id="monety-petra-i_frontend\widgets\GelosMenuWidget" class="accordion_toggle"><div class="menu-item-container"><div class="menu-item-plane-label nested"><a class="menu-button menu-drop" href="/catalog/numizmatica/monety-petra-i"><div class="accordion_trigger"><span class="menu-label">Монеты Петра I</span></div></a></div><div class="menu-item-plane-label chevron"><label class="accordion_trigger chevron" for="monety-petra-i_frontend\widgets\GelosMenuWidget"><span class="span-chevron down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span class="span-chevron up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></label></div></div><div class="accordion_target"><ul class="accordion" style="background-color: #c3a98b"><li class="menu-left first"><div class="menu-item-container"><div class="menu-item-plane-label nested"><a class="menu-button menu-drop" href="/catalog/numizmatica/monety-petra-i/mednye-monety"><div class="accordion_trigger"><span class="menu-label">Медные монеты</span></div></a></div></div></li>
+<li class="menu-left"><input type="checkbox" id="serebrannye-monety_frontend\widgets\GelosMenuWidget" class="accordion_toggle"><div class="menu-item-container"><div class="menu-item-plane-label nested"><a class="menu-button menu-drop" href="/catalog/numizmatica/monety-petra-i/serebrannye-monety"><div class="accordion_trigger"><span class="menu-label">Серебрянные монеты</span></div></a></div><div class="menu-item-plane-label chevron"><label class="accordion_trigger chevron" for="serebrannye-monety_frontend\widgets\GelosMenuWidget"><span class="span-chevron down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span class="span-chevron up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></label></div></div><div class="accordion_target"><ul class="accordion" style="background-color: #b49a7c"><li class="menu-left first last"><div class="menu-item-container"><div class="menu-item-plane-label nested"><a class="menu-button menu-drop" href="/catalog/numizmatica/monety-petra-i/serebrannye-monety/1-rubl"><div class="accordion_trigger"><span class="menu-label">1 Рубль</span></div></a></div></div></li></ul></div></li>
+<li class="menu-left last"><div class="menu-item-container"><div class="menu-item-plane-label nested"><a class="menu-button menu-drop" href="/catalog/numizmatica/monety-petra-i/zolotye-monety-petra-i"><div class="accordion_trigger"><span class="menu-label">Золотые монеты Петра I</span></div></a></div></div></li></ul></div></li></ul></div></li>
+<li class="menu-left"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/catalog/starinnye-chasy"><div class="accordion_trigger"><span class="menu-label">Старинные часы</span></div></a></div></div></li>
+<li class="menu-left"><input type="checkbox" id="faleristika_frontend\widgets\GelosMenuWidget" class="accordion_toggle"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/catalog/faleristika"><div class="accordion_trigger"><span class="menu-label">Фалеристика</span></div></a></div><div class="menu-item-plane-label chevron"><label class="accordion_trigger chevron" for="faleristika_frontend\widgets\GelosMenuWidget"><span class="span-chevron down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span class="span-chevron up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></label></div></div><div class="accordion_target"><ul class="accordion" style="background-color: #d2b89a"><li class="menu-left first last"><div class="menu-item-container"><div class="menu-item-plane-label nested"><a class="menu-button menu-drop" href="/catalog/faleristika/georgievskie-kresty"><div class="accordion_trigger"><span class="menu-label">Георгиевские Кресты</span></div></a></div></div></li></ul></div></li>
+<li class="menu-left last"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/catalog/uvelirnye-izdelia"><div class="accordion_trigger"><span class="menu-label">Ювелирные изделия</span></div></a></div></div></li></ul></div></li>
+<li class="menu-left"><a class="menu-button menu-drop" href="/auctions"><div class="border_label"><span class="menu-label">Аукционы</span></div></a></li>
+<li class="menu-left"><input type="checkbox" id="services_frontend\widgets\GelosMenuWidget" class="accordion_toggle"><a class="menu-button menu-drop" href="/services"><div class="border_label"><span class="menu-label">Услуги</span></div></a><label class="accordion_trigger chevron" for="services_frontend\widgets\GelosMenuWidget"><span class="span-chevron down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span class="span-chevron up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></label><div class="menu-dropdown menu-dropdown2"><ul class="menu-sub"><li class="menu-left first"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/services/vyezdye-aukciony"><div class="accordion_trigger"><span class="menu-label">Выездые аукционы</span></div></a></div></div></li>
+<li class="menu-left"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/services/sertifikacia-predmetov-antikvariata"><div class="accordion_trigger"><span class="menu-label">Сертификация предметов антиквариата</span></div></a></div></div></li>
+<li class="menu-left"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/services/ocenka"><div class="accordion_trigger"><span class="menu-label">Оценка Антиквариата</span></div></a></div></div></li>
+<li class="menu-left last"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/services/pokupka-antikvariata"><div class="accordion_trigger"><span class="menu-label">Покупка Антиквариата</span></div></a></div></div></li></ul></div></li>
+<li class="menu-left last"><input type="checkbox" id="pravila_frontend\widgets\GelosMenuWidget" class="accordion_toggle"><a class="menu-button menu-drop" href="/pravila"><div class="border_label"><span class="menu-label">Правила</span></div></a><label class="accordion_trigger chevron" for="pravila_frontend\widgets\GelosMenuWidget"><span class="span-chevron down"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span class="span-chevron up"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></label><div class="menu-dropdown menu-dropdown2"><ul class="menu-sub"><li class="menu-left first"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/pravila/prinatie-ucastia-v-antikvarnyh-aukcionah"><div class="accordion_trigger"><span class="menu-label">Принятие участия в антикварных аукционах</span></div></a></div></div></li>
+<li class="menu-left"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/pravila/zakonodatelnye-akty-ukrainy-po-antikvariatu"><div class="accordion_trigger"><span class="menu-label">Переміщення культурних цінностей через кордон </span></div></a></div></div></li>
+<li class="menu-left last"><div class="menu-item-container"><div class="menu-item-plane-label"><a class="menu-button menu-drop" href="/pravila/oplata-predmetov"><div class="accordion_trigger"><span class="menu-label">Оплата предметов</span></div></a></div></div></li></ul></div></li></ul></div>
+</div>
+</div>
+
+
+
+    <div class="container gelos-container-background gelos-shadow">
+<div class="empty"></div>
+        <div id="w0">
+
+</div>        
+<header>
+<div id="near_auction" class="near_auction">
+    <div class="near_auction_hat">Ближайшие Аукционы</div>
+</div>
+
+<div  id="near_auction2" class="near_auction2">
+    <a href="/auction/375"><div class="auc_shedule_cell odd"><div class="auc_img_wrap"><img class="auc_shedule_img" src="/img/auk_img.png" alt=""></div><div class="auc_shedule auc_shedule_date"><span class="labelSpan">Аукцион Сезона</span><span class="citySpan">Киев  </span><span class="dateSpanClass">28 Мая 2016</span></div></div></a><a href="/auction/376"><div class="auc_shedule_cell even"><div class="auc_img_wrap"><img class="auc_shedule_img" src="/img/auk_img.png" alt=""></div><div class="auc_shedule auc_shedule_date"><span class="labelSpan">Аукцион Сезона</span><span class="citySpan">Киев  </span><span class="dateSpanClass">30 Июля 2016</span></div></div></a><a href="/auction/377"><div class="auc_shedule_cell odd"><div class="auc_img_wrap"><img class="auc_shedule_img" src="/img/auk_img.png" alt=""></div><div class="auc_shedule auc_shedule_date"><span class="labelSpan">Аукцион Сезона</span><span class="citySpan">Киев  </span><span class="dateSpanClass">04 Марта 2017</span></div></div></a><a href="/auction/378"><div class="auc_shedule_cell even"><div class="auc_img_wrap"><img class="auc_shedule_img" src="/img/auk_img.png" alt=""></div><div class="auc_shedule auc_shedule_date"><span class="labelSpan">Аукцион Сезона</span><span class="citySpan">Киев  </span><span class="dateSpanClass">27 Мая 2017</span></div></div></a></div>
+</header>
+<div class="site-index">
+
+
+    <div class="body-content">
+
+        <div class="row">
+            <div class="col-md-3  col-sm-6 col-xs-12">
+                
+                        <div id="random_product_724" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/dve-schetki-i-rascheska-v-futlyare" aria-label="dve-schetki-i-rascheska-v-futlyare">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/7/2/4/724_catalog_list_536.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/dve-schetki-i-rascheska-v-futlyare">Две щетки и расческа в футляре.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Европейское серебро                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_857" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/ikona-v-oklade-i-kiote-bogomater-vladimirskaya-id-857-201" aria-label="ikona-v-oklade-i-kiote-bogomater-vladimirskaya-id-857-201">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/8/5/7/857_catalog_list_964.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/ikona-v-oklade-i-kiote-bogomater-vladimirskaya-id-857-201">Икона в окладе и киоте &quot;Богоматерь Владимирская&quot;.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Иконы с окладом                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_1019" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/chasy-kaminnye-muzykant" aria-label="chasy-kaminnye-muzykant">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/1/0/1/9/1019_catalog_list_1058.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/chasy-kaminnye-muzykant">Часы каминные &quot;Музыкант&quot;.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Часы                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_1108" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/grafin-serebro-lite-gravirovka-montirovka-hrustal-granenie" aria-label="grafin-serebro-lite-gravirovka-montirovka-hrustal-granenie">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/1/1/0/8/1108_catalog_list_1202.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/grafin-serebro-lite-gravirovka-montirovka-hrustal-granenie">Графин. Серебро, литье, гравировка, монтировка, хрусталь, гранение.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Стекло, хрусталь                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_2376" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/koshevoy-viktor-ivanovich-1924-po-podpisi-hudozhestvennyy-reyting-4v" aria-label="koshevoy-viktor-ivanovich-1924-po-podpisi-hudozhestvennyy-reyting-4v">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/2/3/7/6/2376_catalog_list_4177.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/koshevoy-viktor-ivanovich-1924-po-podpisi-hudozhestvennyy-reyting-4v">Кошевой Виктор Иванович (1924) (по подписи) - Художественный рейтинг 4В.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Живопись и графика                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_2551" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/koshelek-originalnogo-dizayna-s-gravirovkoy-bankovskoy-tematiki-bilet-vnutrennyago-5-id-2551-921" aria-label="koshelek-originalnogo-dizayna-s-gravirovkoy-bankovskoy-tematiki-bilet-vnutrennyago-5-id-2551-921">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/2/5/5/1/2551_catalog_list_4462.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/koshelek-originalnogo-dizayna-s-gravirovkoy-bankovskoy-tematiki-bilet-vnutrennyago-5-id-2551-921">Кошелек оригинального дизайна с гравировкой банковской тематики &quot;Билет внутренняго 5</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Ювелирные изделия                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_3666" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/ckulpturnaya-kompoziciya-igra-s-sobakoy" aria-label="ckulpturnaya-kompoziciya-igra-s-sobakoy">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/3/6/6/6/3666_catalog_list_6420.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/ckulpturnaya-kompoziciya-igra-s-sobakoy">Cкульптурная композиция «Игра с собакой».</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Фарфор и керамика                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_4414" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/skulpturnaya-kompoziciya-yunyy-pogonschik-mulov" aria-label="skulpturnaya-kompoziciya-yunyy-pogonschik-mulov">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/4/4/1/4/4414_catalog_list_7587.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/skulpturnaya-kompoziciya-yunyy-pogonschik-mulov">Скульптурная композиция &quot;Юный погонщик мулов&quot;.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Скульптура из бронзы                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_4730" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/stol-dlya-vizitok" aria-label="stol-dlya-vizitok">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/4/7/3/0/4730_catalog_list_8532.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/stol-dlya-vizitok">Стол для визиток.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Мебель                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_4866" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/yatagan-stal-serebro-rog-korallykovka" aria-label="yatagan-stal-serebro-rog-korallykovka">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/4/8/6/6/4866_catalog_list_8451.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/yatagan-stal-serebro-rog-korallykovka"> Ятаган.  Сталь, серебро, рог, кораллы,ковка.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Кинжалы и кортики                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_5911" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/1-rubl-1813-spb-ps-id-5911-469" aria-label="1-rubl-1813-spb-ps-id-5911-469">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/5/9/1/1/5911_catalog_list_11430.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/1-rubl-1813-spb-ps-id-5911-469">1 Рубль 1813 СПБ-ПС.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Нумизматика                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_6014" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/medal-v-pamyat-koronacii-nikolaya-ii-id-6014-4820" aria-label="medal-v-pamyat-koronacii-nikolaya-ii-id-6014-4820">
+                                                                                          <img src="http://static.antiq.pp.ua/cache/products/6/0/1/4/6014_catalog_list_10686.jpg" alt="" class="img-responsive" />
+                                                                                   </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/medal-v-pamyat-koronacii-nikolaya-ii-id-6014-4820">Медаль &quot;В память коронации Николая II.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Фалеристика                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_39342" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/fotokartochka" aria-label="fotokartochka">
+                                                                                            <img src="http://static.antiq.pp.ua/img/no-img.jpg" alt="" class="img-responsive" />
+                                                                                </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/fotokartochka">Фотография.</a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Фотографии                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_57784" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/ogurcov-s-ty-pomnish-nachalo-literaturno-hudozhestvennyy-nauchno-populyarnyy" aria-label="ogurcov-s-ty-pomnish-nachalo-literaturno-hudozhestvennyy-nauchno-populyarnyy">
+                                                                                            <img src="http://static.antiq.pp.ua/img/no-img.jpg" alt="" class="img-responsive" />
+                                                                                </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/ogurcov-s-ty-pomnish-nachalo-literaturno-hudozhestvennyy-nauchno-populyarnyy">Огурцов С. Ты помнишь … Начало : Литературно-художественный , научно-популярный и публицистический альманах . </a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Поэзия М                        </p>
+                    </div>
+                </div>
+        </div>
+                        <div id="random_product_73205" class="product-layout product-grid ">
+                <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                        <div class="image">
+                                                                    <a href="/product/bona-65679" aria-label="bona-65679">
+                                                                                            <img src="http://static.antiq.pp.ua/img/no-img.jpg" alt="" class="img-responsive" />
+                                                                                </a>
+                                
+                                                        </div>
+                    <div class="caption">
+                        <div class="product-list-header">
+                            <a href="/product/bona-65679">Бона . </a>                        </div >
+                        <p class="price" style="text-indent: 0px; font-size: 15px">
+                            Бонистика                        </p>
+                    </div>
+                </div>
+        </div>
+                </div>
+            <div class="col-md-6 hidden-sm hidden-xs ">Accusamus asperiores aut ex harum libero, molestias quas quidem rem! A ad cupiditate
+                deleniti fugit minus odit praesentium unde. Adipisci aspernatur at autem consequuntur cum dicta
+                doloremque enim, est eveniet ex exercitationem expedita harum, in iure iusto laudantium magnam minus
+                odit placeat qui quibusdam quo quod rem repellendus tenetur voluptas?
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                
+                    <div id="top_lots_6707" class="product-layout product-grid ">
+            <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                    <div class="image">
+                        <a  href="/auction/370/lot/a-mylnikov-istoriya-leyb-gvardii-rezervnogo-pehotnogo-polka-1799-1899-sankt-peterburg" aria-label="a-mylnikov-istoriya-leyb-gvardii-rezervnogo-pehotnogo-polka-1799-1899-sankt-peterburg">
+                            <img class="img-responsive" src="/inc/show_image_wm.php?pid=12684-6707-6706&amp;s=2" alt="a-mylnikov-istoriya-leyb-gvardii-rezervnogo-pehotnogo-polka-1799-1899-sankt-peterburg">                        </a>
+
+                    </div>
+
+                <div class="caption">
+                    <div class="product-list-header">
+                        <a href="/auction/370/lot/a-mylnikov-istoriya-leyb-gvardii-rezervnogo-pehotnogo-polka-1799-1899-sankt-peterburg">А. Мыльников. История лейб-гвардии резервного пехотного полка 1799-1899 Санкт-Петербург.</a>                    </div >
+                    <p class="price" style="text-indent: 0px; font-size: 15px">
+                        31 Октября 2015 - Аукцион Сезона                    </p>
+                </div>
+            </div>
+        </div>
+
+                    <div id="top_lots_6709" class="product-layout product-grid ">
+            <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                    <div class="image">
+                        <a  href="/auction/370/lot/kk-retger-galereya-portretov-doma-romanovyh" aria-label="kk-retger-galereya-portretov-doma-romanovyh">
+                            <img class="img-responsive" src="/inc/show_image_wm.php?pid=12669-6709-6708&amp;s=2" alt="kk-retger-galereya-portretov-doma-romanovyh">                        </a>
+
+                    </div>
+
+                <div class="caption">
+                    <div class="product-list-header">
+                        <a href="/auction/370/lot/kk-retger-galereya-portretov-doma-romanovyh">К.К. Ретгер. Галерея портретов Дома Романовых.</a>                    </div >
+                    <p class="price" style="text-indent: 0px; font-size: 15px">
+                        31 Октября 2015 - Аукцион Сезона                    </p>
+                </div>
+            </div>
+        </div>
+
+                    <div id="top_lots_6717" class="product-layout product-grid ">
+            <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                    <div class="image">
+                        <a  href="/auction/370/lot/15-rublya-10-zlotyh-1836-familnyy-semeynyy-rubl" aria-label="15-rublya-10-zlotyh-1836-familnyy-semeynyy-rubl">
+                            <img class="img-responsive" src="/inc/show_image_wm.php?pid=12715-6717-6716&amp;s=2" alt="15-rublya-10-zlotyh-1836-familnyy-semeynyy-rubl">                        </a>
+
+                    </div>
+
+                <div class="caption">
+                    <div class="product-list-header">
+                        <a href="/auction/370/lot/15-rublya-10-zlotyh-1836-familnyy-semeynyy-rubl">1,5 рубля - 10 злотых 1836 Фамильный (СЕМЕЙНЫЙ) Рубль.</a>                    </div >
+                    <p class="price" style="text-indent: 0px; font-size: 15px">
+                        31 Октября 2015 - Аукцион Сезона                    </p>
+                </div>
+            </div>
+        </div>
+
+                    <div id="top_lots_6729" class="product-layout product-grid ">
+            <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                    <div class="image">
+                        <a  href="/auction/370/lot/georgievskaya-medal-za-hrabrost-1-y-stepeni-4974" aria-label="georgievskaya-medal-za-hrabrost-1-y-stepeni-4974">
+                            <img class="img-responsive" src="/inc/show_image_wm.php?pid=12680-6729-6728&amp;s=2" alt="georgievskaya-medal-za-hrabrost-1-y-stepeni-4974">                        </a>
+
+                    </div>
+
+                <div class="caption">
+                    <div class="product-list-header">
+                        <a href="/auction/370/lot/georgievskaya-medal-za-hrabrost-1-y-stepeni-4974">Георгиевская медаль За Храбрость 1-й степени № 4974.</a>                    </div >
+                    <p class="price" style="text-indent: 0px; font-size: 15px">
+                        31 Октября 2015 - Аукцион Сезона                    </p>
+                </div>
+            </div>
+        </div>
+
+                    <div id="top_lots_6542" class="product-layout product-grid ">
+            <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                    <div class="image">
+                        <a  href="/auction/366/lot/ai-rigelman-letopisnoe-povestvovanie-o-maloy-rossii-i-ee-narode-i-kozakah-voobsche" aria-label="ai-rigelman-letopisnoe-povestvovanie-o-maloy-rossii-i-ee-narode-i-kozakah-voobsche">
+                            <img class="img-responsive" src="/inc/show_image_wm.php?pid=12294-6542-6541&amp;s=2" alt="ai-rigelman-letopisnoe-povestvovanie-o-maloy-rossii-i-ee-narode-i-kozakah-voobsche">                        </a>
+
+                    </div>
+
+                <div class="caption">
+                    <div class="product-list-header">
+                        <a href="/auction/366/lot/ai-rigelman-letopisnoe-povestvovanie-o-maloy-rossii-i-ee-narode-i-kozakah-voobsche"> А.И. Ригельман. Летописное повествование о Малой России и ее народе и козаках вообще.</a>                    </div >
+                    <p class="price" style="text-indent: 0px; font-size: 15px">
+                        10 Апреля 2015 - Аукцион Сезона                    </p>
+                </div>
+            </div>
+        </div>
+
+                    <div id="top_lots_6255" class="product-layout product-grid ">
+            <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                    <div class="image">
+                        <a  href="/auction/355/lot/1-rubl-1725-goda-traurnyy" aria-label="1-rubl-1725-goda-traurnyy">
+                            <img class="img-responsive" src="/inc/show_image_wm.php?pid=11773-6255-6254&amp;s=2" alt="1-rubl-1725-goda-traurnyy">                        </a>
+
+                    </div>
+
+                <div class="caption">
+                    <div class="product-list-header">
+                        <a href="/auction/355/lot/1-rubl-1725-goda-traurnyy">1 рубль 1725 года, &quot;Траурный&quot;.</a>                    </div >
+                    <p class="price" style="text-indent: 0px; font-size: 15px">
+                        25 Января 2013 - Аукцион Месяца                    </p>
+                </div>
+            </div>
+        </div>
+
+                    <div id="top_lots_6157" class="product-layout product-grid ">
+            <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                    <div class="image">
+                        <a  href="/auction/337/lot/nm-karamzin-istoriya-gosudarstva-rossiyskogo-id-6157-2562" aria-label="nm-karamzin-istoriya-gosudarstva-rossiyskogo-id-6157-2562">
+                            <img class="img-responsive" src="/inc/show_image_wm.php?pid=10543-6157-6156&amp;s=2" alt="nm-karamzin-istoriya-gosudarstva-rossiyskogo-id-6157-2562">                        </a>
+
+                    </div>
+
+                <div class="caption">
+                    <div class="product-list-header">
+                        <a href="/auction/337/lot/nm-karamzin-istoriya-gosudarstva-rossiyskogo-id-6157-2562">История государства Российского.[Н.М. Карамзин.]</a>                    </div >
+                    <p class="price" style="text-indent: 0px; font-size: 15px">
+                        25 Июня 2010 - Аукцион Месяца                    </p>
+                </div>
+            </div>
+        </div>
+
+                    <div id="top_lots_4831" class="product-layout product-grid ">
+            <div class="product-thumb gelos-thumb-background gelos-shadow">
+
+                    <div class="image">
+                        <a  href="/auction/243/lot/georgievskiy-krest-2-stepeni-9929" aria-label="georgievskiy-krest-2-stepeni-9929">
+                            <img class="img-responsive" src="/inc/show_image_wm.php?pid=8646-4831-4830&amp;s=2" alt="georgievskiy-krest-2-stepeni-9929">                        </a>
+
+                    </div>
+
+                <div class="caption">
+                    <div class="product-list-header">
+                        <a href="/auction/243/lot/georgievskiy-krest-2-stepeni-9929">  Георгиевский крест 2 степени №9929.</a>                    </div >
+                    <p class="price" style="text-indent: 0px; font-size: 15px">
+                        27 Февраля 2009 - Аукцион Месяца                    </p>
+                </div>
+            </div>
+        </div>
+
+                </div>
+        </div>
+
+
+    </div>
+</div>
+
+    </div>
+</div>
+<footer class="footerTop">
+    <div class="container">
+
+        <!--        <div class="row">-->
+        <div class=" col-sm-6 col-xs-12 ">
+            <div class=" col-xs-6">
+                <h5>Общая информация</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/o-nas"><div style="height: 40px; min-width: 45px;">О Нас</div></a></li>
+                    <li><a href="/vacansii"><div style="height: 40px; min-width: 45px;">Вакансии</div></a></li>
+                    <li><a href="/news"><div style="height: 40px; min-width: 45px;">Новости</div></a></li>
+                    <li><a href="/criminal"><div style="height: 40px; min-width: 45px;">Хищение культурных ценностей</div></a></li>
+                    <li><a href="/oplata"><div style="height: 40px; min-width: 45px;">Оплата</div></a></li>
+
+                </ul>
+            </div>
+            <div class="col-xs-6 text-left">
+                <h5>Сервис</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/ocenka"><div style="height: 40px; min-width: 45px;">Оценка</div></a></li>
+                    <li><a href="/pokupka-antikvariata"><div style="height: 40px; min-width: 45px;">Покупка антиквариата</div></a></li>
+                    <li><a href="/services/vyezdye-aukciony"><div style="height: 40px; min-width: 45px;">Выуздные аукционы</div></a></li>
+                    <li><a href="/news/karta-sayta-sitemap"><div style="height: 40px; min-width: 45px;">Карта сайта</div></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="col-xs-6  text-left">
+                <h5>Деятельность</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/auctions"><div style="height: 40px; min-width: 45px;">Аукционы</div></a></li>
+                    <li><a href="/catalog"><div style="height: 40px; min-width: 45px;">Антикварный салон</div></a></li>
+                    <li><a href="/pravila/prinatie-ucastia-v-antikvarnyh-aukcionah"><div style="height: 40px; min-width: 45px;">Участие в аукционе</div></a></li>
+                    <li><a href="/pravila/zakonodatelnye-akty-ukrainy-po-antikvariatu"><div style="height: 40px; min-width: 45px;">Законодательные акты</div></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6  text-left">
+                <h5>Контакты</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/contactskiev.shtml"><div style="height: 40px; min-width: 45px;">Киев</div></a></li>
+                    <li><a href="/aboutkharkov.shtml"><div style="height: 40px; min-width: 45px;">Харьков</div></a></li>
+                    <li><a href="/aboutodessa.shtml"><div style="height: 40px; min-width: 45px;">Одесса</div></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--    </div>-->
+
+
+    </div>
+
+</footer>
+<div class="footerBottom">
+    <div class="container">
+        <div class="footerBottom__copyrightText">
+            copyright © 2005–2020. Все права защищены
+            Запрещено любое копирование материалов ресурса без письменного согласия Ауциона "Гелос".
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="contacts" class="fade modal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+Аукционный Дом "Гелос". Контактные телефоны
+</div>
+<div class="modal-body">
+
+<div class="row">
+    <div class="col-md-6 col-xs-12">
+        <div class="row contacts-line-height">
+            <div class="col-md-3 col-xs-4  ">
+                <img src="/img/picts/old_phone.gif" class="contacts_logo " alt="old phone logo"/>
+                <img src="/img/picts/viber.gif" class="contacts_logo " alt="viber logo"/>
+            </div>
+            <div class="col-md-9 col-xs-8 text-center header_contacts">         (068)121-68-21     </div>
+        </div>
+
+        <div class="row contacts-line-height row-bckgrnd-cyan " >
+            <div class="col-md-3 col-xs-4 ">
+                <img src="/img/picts/old_phone.gif" class="contacts_logo " alt="old phone logo"/>
+            </div>
+            <div class="col-md-9 col-xs-8 text-center header_contacts">        (044)587-61-67     </div>
+        </div>
+
+        <div class="row contacts-line-height" >
+            <div class="col-md-3  col-xs-4">
+                <img src="/img/picts/old_phone.gif" class="contacts_logo " alt="old phone logo"/>
+                <img src="/img/picts/viber.gif" class="contacts_logo " alt="viber logo"/>
+            </div>
+            <div class="col-md-9 col-xs-8 text-center header_contacts ">        (044)222-94-96     </div>
+        </div>
+
+        <div class="row contacts-line-height row-bckgrnd-cyan " >
+            <div class="col-md-3 col-xs-4  ">
+                <img src="/img/picts/email.gif" class="contacts_logo " alt="email logo"/>
+            </div>
+            <div class="col-md-9 col-xs-8 text-center header_contacts ">         expert@gelos.kiev.ua    </div>
+        </div>
+
+    </div>
+    <div></div>
+    <div class="col-md-6 col-xs-12 pull-right">
+
+        <ul class="contacts_footer_ul contacts_footer_time">
+            <li>Время работы: </li>
+            <li>  Понедельник-Пятница </li>
+            <li>12:00-19:00</li>
+        </ul>
+
+    </div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<div id="search-lots" class="fade modal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+Поиск
+</div>
+<div class="modal-body">
+<div class="row">
+    <div class="   col-xs-12 pull-right ">
+        <div id="sb-search" class="sb-search sb-search-open">
+            <form action="/auction/search" method="get">                <input class="sb-search-input" placeholder="Искать?..." type="text" value="" name="LotsSearch[descr_field]" id="search">
+                <input class="sb-search-submit" type="submit" value="">
+                <span class="sb-icon-search"></span>
+            </form>        </div>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div id="auth" class="fade modal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+Здравствуйте, vlad34
+</div>
+<div class="modal-body">
+<div class="site-login">
+    <div class="row">
+
+<!--        <div class="col-sm-4 col-xs-2 ">-->
+<!--            <div class="align-center">-->
+<!--                <h3>Attach Profile</h3>-->
+<!---->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="col-xs-12">
+                        <div class="list-group">
+                <a href="/cabinet/profile/index" class="list-group-item">Мой кабинет</a>
+                <a href="/logout" class="list-group-item">Выход</a>
+            </div>
+                    </div>
+
+        <div class="col-xs-12 hidden-lg">
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<script src="/assets/5f2cb69d/jquery.js"></script>
+<script src="/assets/1675dd0c/yii.js"></script>
+<script src="/assets/1c340703/js/bootstrap.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/fotorama.js"></script>
+<script src="/js/classie.js"></script>
+<script src="/js/uisearch.js"></script>
+<script src="/js/modernizr.custom.js"></script>
+<script> 
+        new UISearch( document.getElementById( 'sb-search' ) );
+    </script>
+<script>jQuery(function ($) {
+jQuery('#contacts').modal({"show":false});
+jQuery('#search-lots').modal({"show":false});
+jQuery('#auth').modal({"show":false});
+});</script>
 </body>
 </html>
